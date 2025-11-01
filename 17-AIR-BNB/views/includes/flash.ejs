@@ -1,0 +1,26 @@
+<!-- for success -->
+<!-- Success Alert -->
+<% if (success && success.length) { %>
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3 mt-3" role="alert">
+        <%= success %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+
+        <!-- Error Alert -->
+        <% if (error && error.length) { %>
+            <div class="alert alert-danger alert-dismissible fade show col-6 offset-3 mt-3" role="alert">
+                <%= error %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>
+
+                <!-- Optional: Auto-hide alerts after 2 seconds -->
+                <script>
+                    setTimeout(() => {
+                        document.querySelectorAll('.alert').forEach(alert => {
+                            alert.classList.remove('show');
+                            alert.classList.add('hide');
+                        });
+                    }, 2000);
+                </script>

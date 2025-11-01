@@ -1,0 +1,142 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222 !important;
+}
+
+/* Footer */
+.f-info {
+  display: flex;
+  height: 8rem;
+  background-color: #ebebeb;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-socials a {
+  text-decoration: none;
+  color: #222;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+/* Cards - listings.ejs */
+/* .row {
+    padding: 1rem !important;
+} */
+.listings-link {
+  text-decoration: none;
+}
+.listing-card {
+  border: none !important;
+  margin: 0 auto;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  height: 20rem !important;
+  object-fit: cover !important;
+}
+
+.card-text {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-weight: 500;
+}
+.card-title {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.card-img-overlay {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.card-img-overlay:hover {
+  opacity: 0.3;
+  background-color: white;
+}
+
+/* new.ejs */
+.new-form {
+  padding: 2rem 0;
+}
+.add-btn,
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+  padding: 0.5rem 2rem !important;
+  margin-top: 1rem;
+}
+
+/* edit.ejs */
+/* .edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    padding: 0.5rem 2rem !important;
+    margin-top: 1rem;
+} */
+.form-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Show.ejs */
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: end;
+  gap: 1rem;
+}
+.show-edit-btn {
+  background-color: rgb(11, 179, 11) !important;
+  border: none !important;
+  padding: 0.3rem 0.5rem !important;
+  /* margin-top: 1rem; */
+  height: fit-content;
+}
+.show-delete-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+  padding: 0.3rem 0.5rem !important;
+  /* margin-top: 1rem; */
+}

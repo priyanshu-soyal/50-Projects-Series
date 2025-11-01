@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate.ejs") -%>
+
+    <section>
+        <div class="row py-3">
+            <h1 class="col-6 offset-3">Register on wonderlust</h1>
+            <div class="col-6 offset-3">
+                <form action="/signup" method="post" class="new-form py-5 needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control"
+                            required />
+                        <div class="invalid-feedback">
+                            Please enter valid email.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username"
+                            class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password"
+                            class="form-control" required />
+                    </div>
+                    <button type="submit" class="btn btn-dark add-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+    </section>

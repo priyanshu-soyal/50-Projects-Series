@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate.ejs") -%>
+
+    <section style="padding: 1rem;">
+        <h3 style="padding: 1rem 0;">All Listing</h3>
+        <!-- <a href="/listings/new">Create New</a> -->
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 py-5">
+            <% for( let listing of allListing) { %>
+                <a href="/listings/<%= listing._id %>" class="listings-link">
+                    <div class="listing-card card">
+                        <img src="<%= listing.image.url %>" class="card-img-top " alt="<%= listing.title %>"
+                            loading="lazy">
+                        <div class="card-img-overlay"></div>
+                        <div class="card-body">
+                            <p class="card-title">
+                                <b>
+                                    <%= listing.title %>
+                                </b>
+                            </p>
+                            <p class="card-text">
+                                <span>Price : &#8377;<%= listing.price.toLocaleString("en-IN") %> / Day</span> <br>
+                                <span>
+                                    <%= listing.location %>, <%= listing.country %>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+
+        </div>
+    </section>
