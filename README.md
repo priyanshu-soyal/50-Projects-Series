@@ -1,12 +1,13 @@
 # 50 Projects Series
 
-A collection of JavaScript projects designed to help you master web development skills. Currently, 16 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced techniques.
+A collection of web development projects designed to help you master full-stack development skills. Currently, 17 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of web development, from basic JavaScript concepts to full-stack applications with databases and authentication.
 
 ## 🚀 Projects Overview
 
 ### JavaScript Projects
 
 1. **Background Color Changer** 🎨
+
    - Interactive color changing application
    - Features:
      - Random color generation
@@ -17,6 +18,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: DOM manipulation, event handling, color theory
 
 2. **Light On-Off** 💡
+
    - Interactive light switch simulation
    - Features:
      - Realistic light bulb animation
@@ -27,6 +29,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: CSS transitions, toggle states, animation effects
 
 3. **Digital Clock** ⏲️
+
    - Real-time digital clock display
    - Features:
      - 12/24 hour format
@@ -37,6 +40,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: Date object, setInterval, time formatting
 
 4. **Simple Calculator** ➗
+
    - Basic calculator functionality
    - Features:
      - Basic arithmetic operations
@@ -47,6 +51,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: Mathematical operations, input validation
 
 5. **BMI Calculator** 🧮
+
    - Body Mass Index calculator
    - Features:
      - Height and weight input
@@ -57,6 +62,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: Form handling, calculations, data validation
 
 6. **To-Do List** 📝
+
    - Task management application
    - Features:
      - Add/Delete/Edit tasks
@@ -67,6 +73,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: CRUD operations, data persistence, UI/UX design
 
 7. **Quiz App** 🎮
+
    - Interactive quiz application
    - Features:
      - Multiple choice questions
@@ -77,6 +84,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: State management, user interaction, scoring system
 
 8. **Number Guess Game** 🤔
+
    - Interactive number guessing game
    - Features:
      - Random number generation
@@ -87,6 +95,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: Random number generation, game logic, user feedback
 
 9. **Lottery Game** 💰
+
    - Simulated lottery game
    - Features:
      - Random number generation
@@ -97,6 +106,7 @@ A collection of JavaScript projects designed to help you master web development 
    - Key learnings: Probability, random generation, game mechanics
 
 10. **Count Down Timer** ⏱
+
     - Customizable countdown timer
     - Features:
       - Custom time input
@@ -107,6 +117,7 @@ A collection of JavaScript projects designed to help you master web development 
     - Key learnings: Time manipulation, interval handling, audio integration
 
 11. **Password Generator** 🔑
+
     - Secure password generation tool
     - Features:
       - Custom length selection
@@ -117,6 +128,7 @@ A collection of JavaScript projects designed to help you master web development 
     - Key learnings: Security principles, random generation, clipboard API
 
 12. **GitHub Profile App** 👩‍🎓
+
     - GitHub profile viewer
     - Features:
       - Profile information display
@@ -127,6 +139,7 @@ A collection of JavaScript projects designed to help you master web development 
     - Key learnings: API integration, data visualization, async operations
 
 13. **Movie App** 🎥
+
     - Movie information application
     - Features:
       - Movie search
@@ -137,6 +150,7 @@ A collection of JavaScript projects designed to help you master web development 
     - Key learnings: API integration, data display, search functionality
 
 14. **Weather App** 🌤️
+
     - Real-time weather information application
     - Features:
       - Current temperature and weather conditions
@@ -148,6 +162,7 @@ A collection of JavaScript projects designed to help you master web development 
     - Key learnings: API integration, error handling, responsive design, asynchronous JavaScript
 
 15. **QR Code Generator** 📄
+
     - Generate QR codes for any text or URL
     - Features:
       - Real-time QR code generation
@@ -167,19 +182,83 @@ A collection of JavaScript projects designed to help you master web development 
     - Technologies: HTML, CSS (modern gradients, glassmorphism, animations), JavaScript (tab navigation, menu toggling)
     - Key learnings: Responsive web design, personal branding, advanced CSS, interactive UI/UX, modular code structure
 
+### Full Stack Projects
+
+17. **Airbnb Clone** 🏠
+    - Full-stack vacation rental platform inspired by Airbnb
+    - Features:
+      - User authentication and authorization (signup/login/logout)
+      - Create, read, update, and delete listings (CRUD operations)
+      - Image upload with Cloudinary integration
+      - Review and rating system for listings
+      - Flash messages for user feedback
+      - Session management with MongoDB store
+      - Input validation with Joi
+      - Error handling with custom middleware
+      - Responsive design with EJS templates
+    - Technologies:
+      - Backend: Node.js, Express.js, MongoDB, Mongoose
+      - Frontend: EJS, EJS-Mate, CSS
+      - Authentication: Passport.js, Passport-Local, Passport-Local-Mongoose
+      - Cloud Storage: Cloudinary, Multer
+      - Session Management: Express-Session, Connect-Mongo, Connect-Flash
+      - Validation: Joi
+    - Key learnings:
+      - MVC architecture pattern
+      - RESTful API design
+      - Authentication and authorization
+      - Database modeling and relationships
+      - File upload handling
+      - Session and cookie management
+      - Server-side rendering with EJS
+      - Error handling and middleware chains
+      - Cloud storage integration
+      - Form validation and security
+
 ## 🛠️ Technologies Used
+
+### Frontend
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
+- EJS (Embedded JavaScript Templates)
 - Font Awesome Icons
+
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose ODM
+
+### Authentication & Security
+
+- Passport.js
+- Passport-Local
+- Passport-Local-Mongoose
+- Express-Session
+- Connect-Flash
+- Joi (Validation)
+
+### Cloud Services & Storage
+
+- Cloudinary (Image Storage)
+- Multer (File Upload)
+- Connect-Mongo (Session Store)
+
+### APIs
+
 - OpenWeatherMap API
+- GitHub API
+- Movie API
+- QR Code API
 - LocalStorage API
-- Various Third-party APIs
 
 ## 📁 Project Structure
 
 Each project is organized in its own directory with the following naming convention:
+
 - `[PROJECT_NUMBER]-[PROJECT_NAME]`
 - Each project contains:
   - HTML file
@@ -194,16 +273,19 @@ Each project is organized in its own directory with the following naming convent
 ## 🚀 Getting Started
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/priyanshu-soyal/50-Project-Series.git
 ```
 
 2. Navigate to the project directory you want to explore:
+
 ```bash
 cd [PROJECT_NUMBER]-[PROJECT_NAME]
 ```
 
 3. Open the HTML file in your browser:
+
 ```bash
 start index.html  # For Windows
 open index.html   # For Mac
@@ -214,6 +296,7 @@ open index.html   # For Mac
 ## 📝 Note
 
 This is an ongoing project series. More projects will be added over time to cover various aspects of web development. Each project is designed to be:
+
 - Self-contained
 - Easy to understand
 - Practical and useful
@@ -222,6 +305,7 @@ This is an ongoing project series. More projects will be added over time to cove
 ## 🤝 Contributing
 
 Feel free to contribute to this project by:
+
 - Suggesting new project ideas
 - Improving existing projects
 - Reporting bugs
