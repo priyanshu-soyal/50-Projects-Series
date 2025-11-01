@@ -1,0 +1,20 @@
+<% layout("/layout/boilerplateCode.ejs") -%>
+  <section class="allPosts-container">
+    <% allPost.forEach(post => { %>
+    <article class="allPosts-card">
+      <img src="<%= post.image %>" alt="<%= post.title %>" loading="lazy" />
+      <div class="allPosts-meta">
+        <span class="allPosts-meta-info"
+          >Publish By <%= post.author %> on <%= new
+          Date(post.createdAt).toLocaleDateString("en-IN", { day: "2-digit",
+          month: "short", year: "numeric" }) %></span
+        >
+      </div>
+      <div class="allPosts-content">
+        <a href="/blogify/post/<%= post._id %>" class="allPosts-title"><%= post.title %></a>
+        <p><%= post.description.substring(0, 120) %>...</p>
+        <a href="/blogify/post/<%= post._id %>" class="btn">Read More &rarr;</a>
+      </div>
+    </article>
+    <% }) %>
+  </section>

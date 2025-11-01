@@ -1,0 +1,31 @@
+<% layout("/layout/boilerplateCode.ejs") -%>
+<section class="singlePost-container">
+    <article class="singlePost">
+      <img
+        src="<%= post.image %>"
+        alt="<%= post.title %>"
+        class="singlePost-image"
+      />
+
+      <div class="singlePost-meta">
+          <span
+            >By<%= post.author %> on <%= new
+            Date(post.createdAt).toLocaleDateString("en-IN", { day: "2-digit",
+            month: "short", year: "numeric" }) %>
+          </span>
+        </div>
+
+      <div class="singlePost-details">
+        <h1 class="singlePost-title"><%= post.title %></h1>
+
+        <div class="singlePost-body">
+          <p><%= post.description %></p>
+        </div>
+
+        <div class="back-link">
+          <a href="/blogify/posts" class="singlePost-btn btn">← Back to All Posts</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
