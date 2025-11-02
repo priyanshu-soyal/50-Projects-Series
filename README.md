@@ -182,38 +182,7 @@ A collection of web development projects designed to help you master full-stack 
     - Technologies: HTML, CSS (modern gradients, glassmorphism, animations), JavaScript (tab navigation, menu toggling)
     - Key learnings: Responsive web design, personal branding, advanced CSS, interactive UI/UX, modular code structure
 
-### Full Stack Projects
 
-17. **Airbnb Clone** 🏠
-    - Full-stack vacation rental platform inspired by Airbnb
-    - Features:
-      - User authentication and authorization (signup/login/logout)
-      - Create, read, update, and delete listings (CRUD operations)
-      - Image upload with Cloudinary integration
-      - Review and rating system for listings
-      - Flash messages for user feedback
-      - Session management with MongoDB store
-      - Input validation with Joi
-      - Error handling with custom middleware
-      - Responsive design with EJS templates
-    - Technologies:
-      - Backend: Node.js, Express.js, MongoDB, Mongoose
-      - Frontend: EJS, EJS-Mate, CSS
-      - Authentication: Passport.js, Passport-Local, Passport-Local-Mongoose
-      - Cloud Storage: Cloudinary, Multer
-      - Session Management: Express-Session, Connect-Mongo, Connect-Flash
-      - Validation: Joi
-    - Key learnings:
-      - MVC architecture pattern
-      - RESTful API design
-      - Authentication and authorization
-      - Database modeling and relationships
-      - File upload handling
-      - Session and cookie management
-      - Server-side rendering with EJS
-      - Error handling and middleware chains
-      - Cloud storage integration
-      - Form validation and security
 
 ## 🛠️ Technologies Used
 
@@ -224,28 +193,6 @@ A collection of web development projects designed to help you master full-stack 
 - JavaScript (ES6+)
 - EJS (Embedded JavaScript Templates)
 - Font Awesome Icons
-
-### Backend
-
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose ODM
-
-### Authentication & Security
-
-- Passport.js
-- Passport-Local
-- Passport-Local-Mongoose
-- Express-Session
-- Connect-Flash
-- Joi (Validation)
-
-### Cloud Services & Storage
-
-- Cloudinary (Image Storage)
-- Multer (File Upload)
-- Connect-Mongo (Session Store)
 
 ### APIs
 
